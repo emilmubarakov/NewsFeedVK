@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Qx-MZ-mxy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="cYZ-Im-emD">
+            <objects>
+                <viewController id="6Qx-MZ-mxy" customClass="AuthViewController" customModule="NewVkNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1hP-kE-AX0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDI-qK-MfE">
+                                <rect key="frame" x="111.5" y="425.5" width="191" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="7zZ-56-IzR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="31"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="4" maxX="10" maxY="4"/>
+                                <state key="normal" title="Войти в VK">
+                                    <color key="titleColor" red="0.92177957300000002" green="0.92918139700000002" blue="0.94117897750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInTouch" destination="6Qx-MZ-mxy" eventType="touchUpInside" id="Y0V-8J-OFd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.04761214554309845" green="0.49944823980331421" blue="0.77650266885757446" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="CDI-qK-MfE" firstAttribute="centerY" secondItem="1hP-kE-AX0" secondAttribute="centerY" id="hQs-sT-L3G"/>
+                            <constraint firstItem="CDI-qK-MfE" firstAttribute="centerX" secondItem="1hP-kE-AX0" secondAttribute="centerX" id="px0-bJ-oba"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bx5-zL-COJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginInVk" destination="CDI-qK-MfE" id="lDE-JO-ixy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMX-eO-hYJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76.811594202898561" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+</document>
